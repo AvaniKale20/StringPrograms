@@ -17,4 +17,10 @@ public class VowelsAndConsonantsTest {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("avi");
         assertEquals(2, vowelsAndConsonants.count());
     }
+
+    @Test
+    public void givenOneString_WhenCountVowels_ThenReturnCountSix() {
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("updated resume");
+        assertEquals(6, vowelsAndConsonants.count());
+    }
 }
