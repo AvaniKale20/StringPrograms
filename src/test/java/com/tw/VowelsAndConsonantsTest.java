@@ -11,4 +11,10 @@ public class VowelsAndConsonantsTest {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("a");
         assertEquals(1, vowelsAndConsonants.count());
     }
+
+    @Test
+    public void givenOneString_WhenCountVowels_ThenReturnCountTwo() {
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("avi");
+        assertEquals(2, vowelsAndConsonants.count());
+    }
 }

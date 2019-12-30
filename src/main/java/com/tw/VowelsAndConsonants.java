@@ -7,6 +7,12 @@ public class VowelsAndConsonants {
     }
 
     public int count() {
-        return 1;
+        int count=0;
+        for(int j=0;j<string.length();j++) {
+            if (string.charAt(j) == 'a' || string.charAt(j) == 'i') {
+                count++;
+            }
+        }
+        return count;
     }
 }
