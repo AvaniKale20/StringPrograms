@@ -9,10 +9,12 @@ public class VowelsAndConsonants {
     }
 
     public int count() {
+        String convertedString = string.toLowerCase();
+
         int countForV = 0;
         for (int j = 0; j < string.length(); j++) {
-            if (string.charAt(j) == 'a' || string.charAt(j) == 'e' || string.charAt(j) == 'i' || string.charAt(j) == 'o' || string.charAt(j) == 'u') {
-                if (string.charAt(j) != ' ') {
+            if (convertedString.charAt(j) == 'a' || convertedString.charAt(j) == 'e' || convertedString.charAt(j) == 'i' || convertedString.charAt(j) == 'o' || convertedString.charAt(j) == 'u') {
+                if (convertedString.charAt(j) != ' ') {
                     countForV++;
                 }
             }
@@ -23,10 +25,12 @@ public class VowelsAndConsonants {
     }
 
     public int countTwo() {
+        String convertedString = string.toLowerCase();
+
         int countForC = 0;
         for (int j = 0; j < string.length(); j++) {
-            if (!(string.charAt(j) == 'a' || string.charAt(j) == 'e' || string.charAt(j) == 'i' || string.charAt(j) == 'o' || string.charAt(j) == 'u')) {
-                if (string.charAt(j) != ' ') {
+            if (!(convertedString.charAt(j) == 'a' || convertedString.charAt(j) == 'e' || convertedString.charAt(j) == 'i' || convertedString.charAt(j) == 'o' || convertedString.charAt(j) == 'u')) {
+                if (convertedString.charAt(j) != ' ') {
                     countForC++;
                 }
             }

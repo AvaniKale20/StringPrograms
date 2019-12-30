@@ -35,4 +35,10 @@ public class VowelsAndConsonantsTest {
         assertEquals(4, vowelsAndConsonants.countTwo());
         assertEquals(4, vowelsAndConsonants.count());
     }
+    @Test
+    public void givenOneStringWithCapitalLetter_WhenCountConsonantsAndCountVowels_ThenReturnCountTwoAndCountTwo() {
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("GOOD");
+        assertEquals(2, vowelsAndConsonants.countTwo());
+        assertEquals(2, vowelsAndConsonants.count());
+    }
 }
