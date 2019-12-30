@@ -23,4 +23,9 @@ public class VowelsAndConsonantsTest {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("updated resume");
         assertEquals(6, vowelsAndConsonants.count());
     }
+    @Test
+    public void givenOneString_WhenCountConsonants_ThenReturnCountOne() {
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("tw");
+        assertEquals(2, vowelsAndConsonants.countTwo());
+    }
 }
