@@ -12,7 +12,9 @@ public class VowelsAndConsonants {
         int countForV = 0;
         for (int j = 0; j < string.length(); j++) {
             if (string.charAt(j) == 'a' || string.charAt(j) == 'e' || string.charAt(j) == 'i' || string.charAt(j) == 'o' || string.charAt(j) == 'u') {
-                countForV++;
+                if (string.charAt(j) != ' ') {
+                    countForV++;
+                }
             }
         }
         return countForV;
@@ -24,7 +26,9 @@ public class VowelsAndConsonants {
         int countForC = 0;
         for (int j = 0; j < string.length(); j++) {
             if (!(string.charAt(j) == 'a' || string.charAt(j) == 'e' || string.charAt(j) == 'i' || string.charAt(j) == 'o' || string.charAt(j) == 'u')) {
-                countForC++;
+                if (string.charAt(j) != ' ') {
+                    countForC++;
+                }
             }
         }
         return countForC;

@@ -28,4 +28,11 @@ public class VowelsAndConsonantsTest {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("tw");
         assertEquals(2, vowelsAndConsonants.countTwo());
     }
+
+    @Test
+    public void givenOneString_WhenCountConsonantsAndCountVowels_ThenReturnCountFourAndCountFour() {
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants("i am a girl");
+        assertEquals(4, vowelsAndConsonants.countTwo());
+        assertEquals(4, vowelsAndConsonants.count());
+    }
 }
