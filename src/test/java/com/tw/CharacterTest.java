@@ -24,4 +24,11 @@ public class CharacterTest {
 
         Assertions.assertEquals(3, character.count());
     }
+
+    @Test
+    public void givenOneString_WhenCountCharacter_ThenReturnCountIsFive() {
+        Characters character = new Characters("A girl");
+
+        Assertions.assertEquals(5, character.count());
+    }
 }

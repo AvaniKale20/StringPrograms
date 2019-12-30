@@ -13,7 +13,9 @@ public class Characters {
         int count = 0;
         int lenghtOfString = string.length();
         for (int i = 0; i < lenghtOfString; i++) {
-            count++;
+            if (string.charAt(i) != ' ') {
+                count++;
+            }
         }
         return count;
     }
