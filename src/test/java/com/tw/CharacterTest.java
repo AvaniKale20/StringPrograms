@@ -10,4 +10,10 @@ public class CharacterTest {
 
         Assertions.assertEquals(1, character.count());
     }
+    @Test
+    public void givenOneString_WhenCountCharacter_ThenReturnCountIsTwo() {
+        Characters character = new Characters("av");
+
+        Assertions.assertEquals(2, character.count());
+    }
 }
