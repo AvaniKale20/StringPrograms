@@ -15,4 +15,9 @@ public class AnagramTest {
         Anagram anagram = new Anagram("ab", "ab");
         Assertions.assertTrue(anagram.check());
     }
+    @Test
+    public void givenTwoStringWithDifferentLength_WhenCheckAnagram_ThenReturnTrue() {
+        Anagram anagram = new Anagram("abc", "ab");
+        Assertions.assertFalse(anagram.check());
+    }
 }
