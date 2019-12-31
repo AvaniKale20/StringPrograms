@@ -9,4 +9,10 @@ public class AnagramTest {
         Anagram anagram = new Anagram("a", "a");
         Assertions.assertTrue(anagram.check());
     }
+
+    @Test
+    public void givenTwoStringWithTwoLetter_WhenCheckAnagram_ThenReturnTrue() {
+        Anagram anagram = new Anagram("ab", "ab");
+        Assertions.assertTrue(anagram.check());
+    }
 }
