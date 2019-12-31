@@ -31,4 +31,10 @@ public class AnagramTest {
         Anagram anagram = new Anagram("avani", "kale");
         Assertions.assertFalse(anagram.check());
     }
+
+    @Test
+    public void givenTwoStringWithCapitalLetter_WhenCheckAnagram_ThenReturnTrue() {
+        Anagram anagram = new Anagram("AVANI", "ANIVA");
+        Assertions.assertTrue(anagram.check());
+    }
 }

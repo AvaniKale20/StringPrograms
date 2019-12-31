@@ -12,6 +12,7 @@ public class Anagram {
     }
 
     private String sorting(String s1) {
+
         ////Converting to character array
         char[] oneString = s1.toCharArray();
 
@@ -31,9 +32,12 @@ public class Anagram {
     }
 
     public boolean check() {
+        String oneStringConvertToLowerCase = one.toLowerCase();
+        String secondStringConvertToLowerCase = two.toLowerCase();
+
         if (one.length() == two.length()) {
-            String oneSorted = sorting(one);
-            String twoSorted = sorting(two);
+            String oneSorted = sorting(oneStringConvertToLowerCase);
+            String twoSorted = sorting(secondStringConvertToLowerCase);
             return oneSorted.equals(twoSorted);// Arrays.equals(oneSorted, twoSorted)==true
         }
         return false;
