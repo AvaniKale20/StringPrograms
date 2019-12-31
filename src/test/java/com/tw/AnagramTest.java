@@ -20,4 +20,10 @@ public class AnagramTest {
         Anagram anagram = new Anagram("abc", "ab");
         Assertions.assertFalse(anagram.check());
     }
+
+    @Test
+    public void givenTwoStringWithLengthThree_WhenCheckAnagram_ThenReturnTrue() {
+        Anagram anagram = new Anagram("abc", "bca");
+        Assertions.assertTrue(anagram.check());
+    }
 }
