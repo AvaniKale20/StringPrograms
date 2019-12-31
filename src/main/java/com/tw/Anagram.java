@@ -11,10 +11,10 @@ public class Anagram {
         this.two = two;
     }
 
-    private String sorting(String s1) {
+    private String sort(String stringForSorting) {
 
         ////Converting to character array
-        char[] oneString = s1.toCharArray();
+        char[] oneString = stringForSorting.toCharArray();
 
         for (int i = 0; i < oneString.length - 1; i++) {
             for (int j = i + 1; j < oneString.length; j++) {
@@ -26,8 +26,8 @@ public class Anagram {
                 }
             }
         }
-        String converted = Arrays.toString(oneString);
-        return converted;
+        String convertedIntoString = Arrays.toString(oneString);
+        return convertedIntoString;
 
     }
 
@@ -36,9 +36,9 @@ public class Anagram {
         String secondStringConvertToLowerCase = two.toLowerCase();
 
         if (one.length() == two.length()) {
-            String oneSorted = sorting(oneStringConvertToLowerCase);
-            String twoSorted = sorting(secondStringConvertToLowerCase);
-            return oneSorted.equals(twoSorted);// Arrays.equals(oneSorted, twoSorted)==true
+            String sortedOneString = sort(oneStringConvertToLowerCase);
+            String sortedSecondString = sort(secondStringConvertToLowerCase);
+            return sortedOneString.equals(sortedSecondString);// Arrays.equals(oneSorted, twoSorted)==true
         }
         return false;
     }
